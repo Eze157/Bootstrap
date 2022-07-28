@@ -150,7 +150,11 @@ p{
     background-position: center;
     background-size: cover;
 }
-.nleft{
+.nosotros{
+    height: 400px;
+}
+.nright{
+    height: 400px;
     background-image: url(/multimedia/Iglesia.jpg);
     background-size: cover;
     background-position: center;
@@ -230,28 +234,15 @@ footer{
     .barra{
         float: none;
     }
-    .icer{
-        padding: 0%;
-        display: flex;
-        flex-flow: wrap column;
-        justify-content: center;
-    }
 }
 @media (max-width: 960px){
     .contenido{
         grid-template-rows: 240px 240px 260px 270px;
     }
 }
-@media (max-width: 720px){
-    .icer{
-        display: none;
-    }
+@media (max-width: 767px){
     .icono{
-        background-position: center;
-        padding: 10px;
-        margin: 10px;
-        width: 30%;
-        height: 150px;
+        display: none;
     }
     .copyright{
         display: none;
