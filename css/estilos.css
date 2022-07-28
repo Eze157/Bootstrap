@@ -27,25 +27,6 @@ header{
     background-size: cover;
     background-attachment: fixed;
 }
-.menu{
-    height: 120px;
-    width: 50%;
-    float: left;
-}
-.menu label{
-    display: block;
-    height: 40px;
-    width: 40px;
-    font-size: 30px;
-    text-align: center;
-    background-position: top;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-}
-.menu label:hover{
-    cursor: pointer;
-    background:rgba(110, 110, 110, 0.3);
-}
 .dropdown-menu{
     background-color: rgba(110, 110, 110, 0.3);
 }
@@ -63,33 +44,16 @@ p{
 }
 .logo{
     height: 180px;
-    width: 50%;
-    float: right;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-.item{
-    height: auto;
-    width: 100%;
 }
 .icono{
-    height: 150px;
+    height: 200px;
     width: 20%;
     background-image: url(../multimedia/Jóvenes2.png);
     background-size: cover;
     background-position: top;
-}
-.icer{
-    width: auto;
-    height: auto;
-    color: black;
-    font-family: 'Inconsolata', monospace;
-    font-size: 50px;
-    font-weight: bold;
-    text-align: center;
-    padding-left: 310px;
-    padding-top: 60px;
 }
 .galeria{
     height: auto;
@@ -185,6 +149,23 @@ p{
     background-image: url(../multimedia/Cruz.jpg);
     background-position: center;
     background-size: cover;
+}
+.nleft{
+    background-image: url(/multimedia/Iglesia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.nos{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: solid;
+    font-weight: bolder;
+}
+h3{
+    text-align: center;
+}
+.form-control{
+    width: 35%;
 }
 footer{
     background-image: url(../multimedia/Montaña.jpg);
