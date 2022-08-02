@@ -1,323 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inconsolata:wght@300&family=Lobster&family=Permanent+Marker&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* font-family: 'Dancing Script', cursive;
-font-family: 'Inconsolata', monospace;
-font-family: 'Lobster', cursive;
-font-family: 'Permanent Marker', cursive; */
+body {
+  background-color: springgreen;
+}
+body header {
+  height: 150px;
+  width: 100%;
+  padding: auto 0%;
+  margin: auto 0%;
+  background-color: orange;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+main {
+  margin: 15px;
 }
-body{
-    padding: 25px;
-    margin: 25px;
-    border: none;
-    background-size: cover;
-    background-color: rgba(110, 110, 110, 0.3);
+main img:hover {
+  transform: scale(0.8);
+  transition: all 1.5s;
 }
-header{
-    width: 100%;
-    height: 250px;
-    border: none;
-    background-image: url(../multimedia/Montaña.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+main p {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.dropdown-menu{
-    background-color: rgba(110, 110, 110, 0.3);
+
+footer {
+  height: 150px;
+  background-color: orange;
 }
-.dropdown-item{
-    color: white;
+footer p {
+  text-align: center;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-img:hover{
-    transform: scale(0.9);
-    transition: all 0.8s;
+footer .item {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 5px;
 }
-p{
-    font-size: 17px;
-    font-family: 'Inconsolata', monospace;
-    text-align: center;
+footer .item i {
+  color: black;
+  margin-top: 25px;
 }
-.logo{
-    height: 180px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.icono{
-    height: 200px;
-    width: 20%;
-    background-image: url(../multimedia/Jóvenes2.png);
-    background-size: cover;
-    background-position: top;
-}
-.galeria{
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 24%);
-    grid-template-rows: repeat(7, 250px);
-    grid-template-areas: 
-        "img1 img1 img2 img2"
-        "img1 img1 img3 img3"
-        "img4 img5 img3 img3"
-        "img6 img6 img7 img8"
-        "img9 img9 img7 img8"
-        "img10 img11 img11 img12"
-        "img10 img11 img11 img12";
-    grid-gap: 5px 5px;
-}
-.img{
-    border: 2px solid black;
-    border-radius: 5px;
-}
-.img:hover{
-    transform: scale(0.9);
-    transition: all 0.8s;
-}
-.img1{
-    grid-area: img1;
-    background-image: url(../multimedia/Iglesia.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img2{
-    grid-area: img2;
-    background-image: url(../multimedia/Mar.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img3{
-    grid-area: img3;
-    background-image: url(../multimedia/Oveja.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img4{
-    grid-area: img4;
-    background-image: url(../multimedia/Calvario.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img5{
-    grid-area: img5;
-    background-image: url(../multimedia/Cruz.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img6{
-    grid-area: img6;
-    background-image: url(../multimedia/Siervo.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img7{
-    grid-area: img7;
-    background-image: url(../multimedia/Mar.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img8{
-    grid-area: img8;
-    background-image: url(../multimedia/Faro.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img9{
-    grid-area: img9;
-    background-image: url(../multimedia/Energia.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img10{
-    grid-area: img10;
-    background-image: url(../multimedia/Oveja.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img11{
-    grid-area: img11;
-    background-image: url(../multimedia/Iglesia.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.img12{
-    grid-area: img12;
-    background-image: url(../multimedia/Cruz.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.nosotros{
-    height: 400px;
-}
-.nright{
-    height: 400px;
-    background-image: url(/multimedia/Iglesia.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.nos{
-    text-align: center;
-    font-family: 'Inconsolata', monospace;
-    text-decoration: solid;
-    font-weight: bolder;
-}
-h3{
-    text-align: center;
-}
-.form-control{
-    width: 35%;
-}
-footer{
-    background-image: url(../multimedia/Montaña.jpg);
-    background-attachment: fixed;
-    height:180px;
-    width: 100%;
-    color: 0 0 0 rgba(110, 110, 110, 0.1);
-}
-.footer{
-    height: 180px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-    align-items: center;
-}
-.icono2{
-    height: 80px;
-    width:20%;
-    background-image: url(../multimedia/Jóvenes2.png);
-    background-size: cover;
-    background-position: center;
-}
-.redes{
-    height: auto;
-    width:20%;
-}
-.redes a i{
-    color: black;
-    font-size: 22px;
-    letter-spacing: 10px;
-    text-align: center;
-}
-.copyright{
-    height: auto;
-    width: auto;
-}
-.copyright p{
-    font-family: 'Inconsolata', monospace;
-    font-weight: bold;
-    text-align: center;
-    text-transform: capitalize;
-    text-shadow: 2px 2px 5px white;
-}
-.titulo{
-    color: black;
-    font-family: 'Inconsolata', monospace;
-    font-size: 20px;
-}
-@media (max-width: 1336px){
-    body{
-        margin: 5px;
-        padding: 5px;
-        width: auto;
-    }
-    .logo{
-        float: none;
-        align-content: center;
-        justify-content: center;
-        justify-content: right;
-    }
-    .barra{
-        float: none;
-    }
-}
-@media (max-width: 960px){
-    .contenido{
-        grid-template-rows: 240px 240px 260px 270px;
-    }
-}
-@media (max-width: 767px){
-    .icono{
-        display: none;
-    }
-    .copyright{
-        display: none;
-    }
-    .footer{
-        justify-content: space-between;
-    }
-    .redes{
-        display: flex;
-        flex-grow: 1;
-        justify-content: flex-end;
-    }
-    .contenido{
-        grid-template-rows: 200px 100px 300px 600px 650px;
-    }
-        .cuadro1{
-        grid-column: 1/3;
-        grid-row: 1/3;
-    }
-    .cuadro2{
-        grid-row: 3/4;
-        grid-column: 1/3;
-    }
-    .cuadro3{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    .cuadro4{
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-    .cuadro5{
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-    .cuadro6{
-        grid-column: 2/3;
-        grid-row: 5/6;
-    }
-}
-@media (max-width: 360px){
-    header{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        height: auto;
-    }
-    iframe{
-        width: 100%;
-    }
-    .cuadro1{
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-    .cuadro2{
-        grid-row: 2/3;
-        grid-column: 1/3;
-    }
-    .cuadro3{
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-    .cuadro4{
-        grid-column: 1/3;
-        grid-row: 4/5;
-    }
-    .cuadro5{
-        grid-column: 1/3;
-        grid-row: 5/6;
-    }
-    .cuadro6{
-        grid-column: 1/3;
-        grid-row: 6/7;
-    }
-    .contenido{
-        grid-template-rows: 200px 250px 200px 300px 300px 200px;
-    }
-}
+
+/*# sourceMappingURL=estilos.css.map */

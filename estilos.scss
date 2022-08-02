@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: springgreen;
+
+    header{
+        height: 150px;
+        width: 100%;
+        padding: auto 0%;
+        margin: auto 0%;
+        background-color: orange;
+    }
+}
+main{
+    margin: 15px;
+
+    img:hover{
+        transform: scale(0.8);
+        transition: all 1.5s;
+    }
+
+    p{
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        margin: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+footer{
+    height: 150px;
+    background-color: orange;
+
+    p{
+        text-align: center;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .item{
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 5px;
+    
+        i{
+            color: black;
+            margin-top: 25px;
+        }
+    }
+}
