@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(110, 110, 110, 0.3);
+}
+body header {
+  background-color: orange;
+  height: 120px;
+  width: 100%;
+}
+body .titulo1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body .inicio {
+  margin: 20px;
+}
+body .inicio img:hover {
+  transform: scale(0.8);
+  transition: all 1.5s;
+}
+body .inicio p {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+body footer {
+  height: 200px;
+  width: 100%;
+  background-color: orange;
+  padding: 15px;
+}
+body footer .redes {
+  text-align: center;
+}
+body footer .redes i {
+  letter-spacing: 15px;
+  font-size: 25px;
+  color: black;
+  margin-top: 50px;
+}
+body .copyright {
+  margin: 15px;
+}
+body .copyright p {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=estilos.css.map */

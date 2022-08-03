@@ -1,54 +1,76 @@
+$color1: springgreen;
+$color2: orange;
+$color3: rgba(110, 110, 110, 0.3);
+$color4: lightblue;
+$color5: black;
+$fonts1: Verdana, Geneva, Tahoma, sans-serif;
+$fonts2: cursive;
+$fonts3: sans-serif;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    background-color: springgreen;
+    background-color: $color3;
 
     header{
-        height: 150px;
+        background-color: $color2;
+        height: 120px;
         width: 100%;
-        padding: auto 0%;
-        margin: auto 0%;
-        background-color: orange;
-    }
-}
-main{
-    margin: 15px;
-
-    img:hover{
-        transform: scale(0.8);
-        transition: all 1.5s;
     }
 
-    p{
-        text-align: center;
-        font-size: 18px;
-        padding: 10px;
-        margin: 10px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-}
-footer{
-    height: 150px;
-    background-color: orange;
-
-    p{
-        text-align: center;
-        font-size: 18px;
-        text-transform: capitalize;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    .item{
-        text-align: center;
+    .titulo1{
         font-size: 30px;
-        letter-spacing: 5px;
-    
-        i{
-            color: black;
-            margin-top: 25px;
+        color: $color5;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .inicio{
+        margin: 20px;
+
+        img:hover{
+            transform: scale(0.8);
+            transition: all 1.5s;
+        }
+
+        p{
+            text-align: center;
+            font-family: $fonts1;
+            margin: 10px;
+            padding: 10px;
+        }
+    }
+
+    footer{
+        height: 200px;
+        width: 100%;
+        background-color: orange;
+        padding: 15px;
+
+        .redes{
+            text-align: center;
+
+            i{
+                letter-spacing: 15px;
+                font-size: 25px;
+                color: black;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .copyright{
+        margin: 15px;
+
+        p{
+            text-align: center;
+            font-family: $fonts1;
+            font-size: 18px;
+            text-transform: capitalize;
         }
     }
 }
